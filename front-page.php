@@ -1,138 +1,110 @@
 <?php get_header(); ?>
 
-<?php get_template_part( "menu-panel" ); ?>
+<!-- A responsive hero section -->
 
-<?php get_template_part( "masthead" ); ?>
+<section id="hero">
 
-<!-- A section displaying three featured posts -->
-<section id="featured">
+  <!-- <div class="bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/bg.jpg"></div> -->
 
-  <?php
-  function displayRandom() {
-      $photoAreas = array("/bg1.jpg", "/bg2.jpg", "/bg3.jpg");
-      $randomNumber = rand(0, (count($photoAreas) - 1));
-      echo $photoAreas[$randomNumber];
-  }
-?>
+  <video autoplay loop>
+    <source src="<?php bloginfo('template_directory'); ?>/vid/bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <div id="bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/<?php displayRandom(); ?>"></div>
-  <div id="grad"></div>
+  <div class="grad"></div>
 
   <div class="container">
-    <div class="postbox">
-    <?php
-    //Declares a counter variable, which will count only the first three posts
-    $counter = 0;
-    //The loop
-    if ( have_posts() ){
-      while ( have_posts() && $counter<3 ){
-        the_post();
 
-        $feat = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-$feat = $feat[0];
+    <img src="<?php bloginfo('template_directory'); ?>/img/tv.png"/>
+    <hr>
+    <h2><?php bloginfo("description"); ?></h2>
+    <div class="buttons">
 
-        //Apply hero class to first post
-        if ($counter==0){
-          ?>
-          <div class="spacer">
-            <div class="post hero">
-              <a class="cover" href="<?php the_permalink(); ?>"></a>
-              <div class="img" style="background-image:url(<?php echo $feat; ?>) "></div>
-              <div class="meta">
-                <h5><?php the_category( ", " ); ?> | By <?php the_author(); ?></h5>
-                <h3><?php the_title(); ?></h3>
-                <hr>
-                <p><?php the_excerpt(); ?></p>
-              </div>
-            </div>
-          </div>
-            <?php
-        } else {
-          ?>
-          <div class="sidebyside">
-            <div class="post trail" style="background-image:url(<?php echo $feat; ?>) ">
-              <a class="cover" href="<?php the_permalink(); ?>"></a>
-              <div class="grad"></div>
-              <h3><?php the_title(); ?></h3>
-            </div>
-          </div>
-          <?php
-        };
-          ?>
+      <a class="button" href="#watch"><span>Learn more</span></a>
 
-
-    <?php
-    //Iterate the counter
-    $counter++;
-    //End the loop
-  };
-      };
-    ?>
-
-    <div style="clear:both;"></div>
+      <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
 
     </div>
+
   </div>
 </section>
 
-<section id="latest">
+<!-- An embedded Youtube video in the "Watch" section -->
+
+<section id="watch">
   <div class="container">
 
-    <hr id="sides">
-    <h2 id="divider">The latest</h2>
+    <h3>Watch</h3>
+    <p>Marfa lo-fi wayfarers, chia hammock whatever skateboard gentrify everyday carry deep v street art put a bird on it occupy mustache forage.</p>
 
-
-
-    <div class="postbox grid">
-    <?php
-    //The loop
-    if ( have_posts() ){
-      while ( have_posts()){
-        the_post();
-
-        //Establish a counter variable and stop the loop if the specified value is reached
-        static $count = 0;
-        if ($count == "20") { break; }
-        else {
-
-        $feat = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-$feat = $feat[0];
-          ?>
-          <div class="grid-item">
-            <div class="post">
-              <a class="cover" href="<?php the_permalink(); ?>"></a>
-              <img src="<?php echo $feat; ?>" />
-              <h5><?php the_category( ", " ); ?> | By <?php the_author(); ?></h5>
-              <h3><?php the_title(); ?></h3>
-              <hr>
-              <p><?php the_excerpt(); ?></p>
-            </div>
-          </div>
-    <?php
-  };
-    //Iterate the counter
-    $count++;
-    //End the loop
-        };
-      };
-    ?>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1lAobSkstCc" frameborder="0" allowfullscreen></iframe>
     </div>
-  </div>
-  <div class="pagination">
-    <?php previous_posts_link( '<i class="fa fa-caret-left"></i> Newer articles' ); ?>
-    <?php next_posts_link( 'Older articles <i class="fa fa-caret-right"></i>' ); ?>
+
+    <div class="buttons">
+
+      <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
+
+    </div>
+
   </div>
 </section>
 
-<script>
- window.onload = function () {
-jQuery('.grid').masonry({
-// options
-itemSelector: '.grid-item',
-itemSelector: '.grid-item',
-percentPosition: true
-});
-}
-</script>
+<!-- The team gallery -->
+
+<section id="team">
+  <div class="container">
+
+    <h3>Meet the team</h3>
+    <p>Description goes here</p>
+
+  </div>
+</section>
+
+<!-- A mailing list subscribe CTA -->
+
+<section id="subscribe">
+  <div class="container">
+
+    <h3>Get on the list</h3>
+    <p>Description goes here</p>
+
+  </div>
+</section>
+
+<!-- Service triplet boxes linking to email. -->
+
+<section id="services">
+  <div class="container">
+
+    <h3>We cover events</h3>
+    <p>We accept hires from other student groups and University organisations. We’ll work with you to cover events, promote your activities and more. All income is reinvested back into Smoke TV.</p>
+
+    <div class="services">
+      <div class="service">
+        <h4>Live broadcasts</h4>
+        <p>We’ll add value to your events by livestreaming them in HD.</p>
+        <img src="<?php bloginfo('template_directory'); ?>/img/1.png"/>
+        <a class="button" href="#">Contact</a>
+        <a class="cover" href="#"></a>
+      </div>
+      <div class="service">
+        <h4>Promos</h4>
+        <p>We’ll work with you to create a trailer for an event or campaign.</p>
+        <img src="<?php bloginfo('template_directory'); ?>/img/2.png"/>
+        <a class="button" href="#">Contact</a>
+        <a class="cover" href="#"></a>
+      </div>
+      <div class="service">
+        <h4>Highlights</h4>
+        <p>We’ll come along to your events and film short highlights.</p>
+        <img src="<?php bloginfo('template_directory'); ?>/img/3.png"/>
+        <a class="button" href="#">Contact</a>
+        <a class="cover" href="#"></a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <?php get_footer(); ?>
