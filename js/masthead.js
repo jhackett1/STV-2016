@@ -17,4 +17,15 @@
     });
 
 
+    var navpos = jQuery('#watch').offset();
+      jQuery(window).bind('scroll', function() {
+        if (jQuery(window).scrollTop() > navpos.top) {
+          jQuery('#logo').addClass('enlarge');
+         }
+         else {
+          jQuery('#logo').removeClass('enlarge');
+         }
+      });
+
+
   });

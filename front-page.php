@@ -1,66 +1,34 @@
 <?php get_header(); ?>
 
-<!-- A responsive hero section -->
-<section id="hero">
-
-  <!-- <div class="bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/bg.jpg"></div> -->
-
-  <video autoplay loop>
-    <source src="<?php bloginfo('template_directory'); ?>/vid/bg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- <div class="grad"></div> -->
-
-  <div class="container">
-
-    <img src="<?php bloginfo('template_directory'); ?>/img/tv.png"/>
-    <hr>
-    <h2><?php bloginfo("description"); ?></h2>
-    <div class="buttons">
-
-      <a class="button" href="#watch"><span>Learn more</span></a>
-
-      <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
-
-    </div>
-
-  </div>
-</section>
-
 <!-- An embedded Youtube video in the "Watch" section -->
 
 <section id="watch">
 
   <div id="slice"></div>
 
+
   <div class="container">
 
-    <h3>Watch</h3>
-    <p>We are the University of Westminster’s student-run TV station. We cover events, produce highlights, news roundups and live broadcasts, bringing together thousands of students across four campuses.</p>
+    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png"/>
+
 
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/1lAobSkstCc" frameborder="0" allowfullscreen></iframe>
     </div>
-
     <div class="buttons">
-
-      <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
-
+      <p>We are the <strong>University of Westminster’s student-run TV station</strong>. We cover events, produce highlights, news roundups and live broadcasts, bringing together thousands of students across four campuses.</p>
+      <a class="button watch" href="#"><span>More on Youtube</span><i class="fa fa-play"></i></a>
     </div>
-
   </div>
 </section>
 
 <!-- The team gallery -->
 
 <section id="team">
-
   <div id="grad"></div>
-
   <div class="container">
-
     <h3>What's going on?</h3>
+    <hr>
     <p>Take a look at our current projects...</p>
 
       <script>
@@ -103,33 +71,36 @@
       </script>
 
       <div class="social-feed-container" style="max-width: 600px; margin: 20px auto"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="buttons">
+        <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
+      </div>
   </div>
 </section>
 
 <!-- A mailing list subscribe CTA -->
 
-<!-- <section id="subscribe">
+<section id="subscribe">
   <div class="container">
 
-    <h3>Get on the list</h3>
-    <p>Description goes here</p>
+    <h3>Subscribe</h3>
+    <hr>
+    <p>Want to get involved with Smoke TV? Get on our mailing list and join the Facebook group. No experience is needed and full training is provided.</p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="//media.us13.list-manage.com/subscribe/post?u=bae3fdf7dc6f735f144847240&amp;id=ffaab9e48d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bae3fdf7dc6f735f144847240_ffaab9e48d" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
 
   </div>
-</section> -->
+</section>
 
 <!-- Service triplet boxes linking to email. -->
 
@@ -139,6 +110,7 @@
   <div class="container">
 
     <h3>We cover events</h3>
+    <hr>
     <p>We accept hires from other student groups and University organisations. We’ll work with you to cover events, promote your activities and more. All income is reinvested back into Smoke TV.</p>
 
     <div class="services">

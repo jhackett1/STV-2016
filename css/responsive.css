@@ -1,6 +1,16 @@
-@media (max-width: 770px) {
+@media (max-width: 1070px) {
   div.container {
     padding: 20px; }
+
+  section#watch div#slice {
+    height: 60%; }
+  section#watch div.container {
+    padding-top: 20px; }
+    section#watch div.container img {
+      margin: 40px auto;
+      height: 100px; }
+    section#watch div.container div.buttons {
+      flex-direction: column; }
 
   section#hero div.grad {
     height: 60%; }
