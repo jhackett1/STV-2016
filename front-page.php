@@ -82,7 +82,7 @@
 <section id="subscribe">
   <div class="container">
 
-    <h3>Subscribe</h3>
+    <h3>Make films and influence people</h3>
     <hr>
     <p>Want to get involved with Smoke TV? Get on our mailing list and join the Facebook group. No experience is needed and full training is provided.</p>
 
