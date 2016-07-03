@@ -10,7 +10,7 @@
 
   section#watch
     div#slice
-      height: 60%
+      height: 50%
 
     div.container
       padding-top: 20px
@@ -21,6 +21,15 @@
 
       div.buttons
         flex-direction: column
+        align-items: center
+
+        hr
+          display: none
+
+        p
+          margin-bottom: 20px
+          text-align: center
+          font-size: 1.1em
 
   section#hero
     div.grad
@@ -39,6 +48,26 @@
 
 //Styling for phones and smaller
 @media (max-width: 650px)
+
+  div.services
+    flex-direction: column !important
+
+    div.service
+      margin: 20px 0px 0px 0px
+
+  section#subscribe
+    div#mc_embed_signup
+      form
+        div#mc_embed_signup_scroll
+          flex-direction: column !important
+
+          input.email
+            margin-bottom: 10px
+
+  section
+    div.container
+      h3
+        font-size: 2em
 
 
 

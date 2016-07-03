@@ -3,14 +3,21 @@
     padding: 20px; }
 
   section#watch div#slice {
-    height: 60%; }
+    height: 50%; }
   section#watch div.container {
     padding-top: 20px; }
     section#watch div.container img {
       margin: 40px auto;
       height: 100px; }
     section#watch div.container div.buttons {
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
+      section#watch div.container div.buttons hr {
+        display: none; }
+      section#watch div.container div.buttons p {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.1em; }
 
   section#hero div.grad {
     height: 60%; }
@@ -22,5 +29,18 @@
 
   .mobileshow {
     display: block !important; } }
+@media (max-width: 650px) {
+  div.services {
+    flex-direction: column !important; }
+    div.services div.service {
+      margin: 20px 0px 0px 0px; }
+
+  section#subscribe div#mc_embed_signup form div#mc_embed_signup_scroll {
+    flex-direction: column !important; }
+    section#subscribe div#mc_embed_signup form div#mc_embed_signup_scroll input.email {
+      margin-bottom: 10px; }
+
+  section div.container h3 {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=responsive.css.map */

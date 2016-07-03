@@ -127,6 +127,9 @@ footer .container
     margin-bottom: 5px
     margin-top: 20px
 
+    a
+      color: $brand-red
+
   img
     margin-top: 10px
 
@@ -156,6 +159,7 @@ div.buttons
   z-index: 3
   position: relative
   margin-top: 20px
+
 
   a.button
     font-family: $p-stack
@@ -204,8 +208,20 @@ div.video-container
     height: 100%
 
 section#services
-  margin-bottom: 50px
   position: relative
+  overflow: hidden
+
+  div#slice
+    position: absolute
+    left: 0px
+    right: 0px
+    top: -100px
+    height: 60%
+    width: 100%
+    background-color: #e6e6e6
+    z-index: 1
+    transform: scale(1.5) rotate(-10deg)
+    opacity: 0.9
 
   div#grad
     position: absolute
@@ -280,12 +296,12 @@ section#services
           border-radius: 1px
 
 section#subscribe
-  background-color: $brand-red
+  background-color: rgba(156, 31, 50, 0.9)
   color: $background
   padding-top: 50px
   padding-bottom: 30px
   margin-top: 30px
-  margin-bottom: 30px
+  margin-bottom: 0px
 
 
   ::selection
@@ -298,6 +314,9 @@ section#subscribe
     h3, p
       color: $background
       text-align: center
+
+      span
+        color: #ffabab
 
     hr
       border: 3px solid $light-grey
@@ -400,7 +419,7 @@ section#watch
       transition: 0.3s
 
     img.enlarge
-      height: 120px
+      height: 100px
 
     h3
       color: $background
@@ -409,6 +428,7 @@ section#watch
       color: $text
       max-width: 600px
       margin: 0px 0px 0px 0px
+      font-size: 1.2em
 
     div.video-container
       position: relative
@@ -421,5 +441,28 @@ section#watch
 
     hr
       border: 3px solid $brand-red
-      margin: 20px auto
+      margin: 20px 0px
       width: 50px
+
+
+div.pagination
+  margin: 30px
+  text-align: center
+
+  a
+    padding: 15px
+    font-family: $p-stack
+    color: $text
+    text-transform: uppercase
+    border-radius: 3px
+    margin: 5px
+    font-size: 0.8em
+    transition: 0.1s
+    border: 0.5px solid #dfdfdf
+
+    i
+      margin: 3px
+
+  a:hover
+    text-decoration: none
+    background-color: #dfdfdf

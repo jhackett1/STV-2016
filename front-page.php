@@ -16,8 +16,11 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/1lAobSkstCc" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="buttons">
-      <p>We are the <strong>University of Westminster’s student-run TV station</strong>. We cover events, produce highlights, news roundups and live broadcasts, bringing together thousands of students across four campuses.</p>
-      <a class="button watch" href="#"><span>More on Youtube</span><i class="fa fa-play"></i></a>
+      <div>
+        <hr>
+        <p>We are the <strong>University of Westminster’s student-run TV station</strong>. We bring together twenty thousand students across four campuses, and <strong>anyone</strong> can get involved.</p>
+      </div>
+      <a class="button watch" href="https://www.youtube.com/user/WestminsterSmokeTV" target="blank"><span>More on Youtube</span><i class="fa fa-play"></i></a>
     </div>
   </div>
 </section>
@@ -72,7 +75,7 @@
 
       <div class="social-feed-container" style="max-width: 600px; margin: 20px auto"></div>
       <div class="buttons">
-        <a class="button watch" href="#"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
+        <a class="button watch" href="https://www.youtube.com/user/WestminsterSmokeTV" target="blank"><span>Watch on Youtube</span><i class="fa fa-play"></i></a>
       </div>
   </div>
 </section>
@@ -82,7 +85,7 @@
 <section id="subscribe">
   <div class="container">
 
-    <h3>Make films and influence people</h3>
+    <h3>How to <span>make films</span> and influence people</h3>
     <hr>
     <p>Want to get involved with Smoke TV? Get on our mailing list and join the Facebook group. No experience is needed and full training is provided.</p>
 
@@ -90,7 +93,7 @@
     <div id="mc_embed_signup">
     <form action="//media.us13.list-manage.com/subscribe/post?u=bae3fdf7dc6f735f144847240&amp;id=ffaab9e48d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bae3fdf7dc6f735f144847240_ffaab9e48d" tabindex="-1" value=""></div>
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
@@ -105,7 +108,7 @@
 <!-- Service triplet boxes linking to email. -->
 
 <section id="services">
-  <div id="grad"></div>
+    <div id="slice"></div>
 
   <div class="container">
 
@@ -138,6 +141,11 @@
     </div>
 
   </div>
+
+  <div class="pagination">
+    <a href="#watch"><i class="fa fa-caret-up"></i> Back to top</a>
+  </div>
+
 </section>
 
 <?php get_footer(); ?>

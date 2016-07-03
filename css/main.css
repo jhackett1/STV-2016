@@ -99,6 +99,8 @@ footer .container {
     font-size: 0.7em;
     margin-bottom: 5px;
     margin-top: 20px; }
+    footer .container p a {
+      color: #9c1f32; }
   footer .container img {
     margin-top: 10px; }
 
@@ -163,8 +165,19 @@ div.video-container {
     height: 100%; }
 
 section#services {
-  margin-bottom: 50px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  section#services div#slice {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -100px;
+    height: 60%;
+    width: 100%;
+    background-color: #e6e6e6;
+    z-index: 1;
+    transform: scale(1.5) rotate(-10deg);
+    opacity: 0.9; }
   section#services div#grad {
     position: absolute;
     left: 0px;
@@ -228,12 +241,12 @@ section#services {
           border-radius: 1px; }
 
 section#subscribe {
-  background-color: #9c1f32;
+  background-color: rgba(156, 31, 50, 0.9);
   color: #fafafa;
   padding-top: 50px;
   padding-bottom: 30px;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
   section#subscribe ::selection {
     background-color: rgba(255, 255, 255, 0.9);
     color: #9c1f32; }
@@ -242,6 +255,8 @@ section#subscribe {
     section#subscribe div.container h3, section#subscribe div.container p {
       color: #fafafa;
       text-align: center; }
+      section#subscribe div.container h3 span, section#subscribe div.container p span {
+        color: #ffabab; }
     section#subscribe div.container hr {
       border: 3px solid #efefef;
       margin: 20px auto;
@@ -326,13 +341,14 @@ section#watch {
       display: block;
       transition: 0.3s; }
     section#watch div.container img.enlarge {
-      height: 120px; }
+      height: 100px; }
     section#watch div.container h3 {
       color: #fafafa; }
     section#watch div.container p {
       color: #2d2d2d;
       max-width: 600px;
-      margin: 0px 0px 0px 0px; }
+      margin: 0px 0px 0px 0px;
+      font-size: 1.2em; }
     section#watch div.container div.video-container {
       position: relative;
       padding-bottom: 52%;
@@ -343,7 +359,26 @@ section#watch {
       box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2); }
     section#watch div.container hr {
       border: 3px solid #9c1f32;
-      margin: 20px auto;
+      margin: 20px 0px;
       width: 50px; }
+
+div.pagination {
+  margin: 30px;
+  text-align: center; }
+  div.pagination a {
+    padding: 15px;
+    font-family: Lato, serif;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 0.8em;
+    transition: 0.1s;
+    border: 0.5px solid #dfdfdf; }
+    div.pagination a i {
+      margin: 3px; }
+  div.pagination a:hover {
+    text-decoration: none;
+    background-color: #dfdfdf; }
 
 /*# sourceMappingURL=main.css.map */
