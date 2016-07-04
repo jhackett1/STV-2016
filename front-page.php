@@ -32,7 +32,7 @@
   <div class="container">
     <h3>What's going on?</h3>
     <hr>
-    <p>Take a look at our current projects...</p>
+    <p class="desc">Take a look at our current projects...</p>
 
       <script>
           $(document).ready(function(){
@@ -85,7 +85,9 @@
 <section id="subscribe">
   <div class="container">
 
-    <h3>How to <span>make films</span> and influence people</h3>
+
+
+    <h3 class="animated fadeInUp">How to <span>make films</span> and influence people</h3>
     <hr>
     <p>Want to get involved with Smoke TV? Get on our mailing list and join the Facebook group. No experience is needed and full training is provided.</p>
 

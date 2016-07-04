@@ -314,8 +314,9 @@ section#team {
   section#team div.container {
     position: relative;
     z-index: 999;
-    padding-top: 50px;
-    text-align: center; }
+    padding-top: 50px; }
+    section#team div.container p.desc {
+      text-align: center; }
 
 section#watch {
   position: relative;
@@ -380,5 +381,3 @@ div.pagination {
   div.pagination a:hover {
     text-decoration: none;
     background-color: #dfdfdf; }
-
-/*# sourceMappingURL=main.css.map */
