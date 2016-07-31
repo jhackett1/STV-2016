@@ -6,6 +6,7 @@
 	wp_enqueue_style( 'animate', get_stylesheet_directory_uri() . '/css/animate.css' );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.12.4.min.js');
 	wp_enqueue_script( 'masthead', get_template_directory_uri() . '/js/masthead.js');
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js');
 	wp_enqueue_script( 'masonry', 'https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js');
 
 //Adds in Google Web fonts

@@ -25,12 +25,58 @@
   </div>
 </section>
 
+<!-- A mailing list subscribe CTA -->
+
+<section id="subscribe">
+  <div class="bg" style="background-image: url( <?php echo get_template_directory_uri(); ?>/img/1.jpg )"></div>
+  <div class="container">
+    <h2 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">How to <span>make films</span> and influence people</h2>
+    <p>Want to get involved with Smoke TV? Get on our mailing list and <a href="https://www.facebook.com/groups/208849179517037/">join the Facebook group</a>. No experience is needed and full training is provided.</p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="//media.us13.list-manage.com/subscribe/post?u=bae3fdf7dc6f735f144847240&amp;id=ffaab9e48d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+
+    <div class="mc-field-group">
+    	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+    </div>
+    <div class="mc-field-group input-group" style="display: none;">
+        <strong>Outlets </strong>
+        <ul><li><input type="checkbox" value="1" name="group[7153][1]" id="mce-group[7153]-7153-0" checked><label for="mce-group[7153]-7153-0">QH</label></li>
+    <li><input type="checkbox" value="2" name="group[7153][2]" id="mce-group[7153]-7153-1" checked><label for="mce-group[7153]-7153-1">Magazine</label></li>
+    <li><input type="checkbox" value="4" name="group[7153][4]" id="mce-group[7153]-7153-2" checked><label for="mce-group[7153]-7153-2">Radio</label></li>
+    <li><input type="checkbox" value="8" name="group[7153][8]" id="mce-group[7153]-7153-3" checked><label for="mce-group[7153]-7153-3">TV</label></li>
+    </ul>
+    </div>
+    	<div id="mce-responses" class="clear">
+    		<div class="response" id="mce-error-response" style="display:none"></div>
+    		<div class="response" id="mce-success-response" style="display:none"></div>
+    	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bae3fdf7dc6f735f144847240_ffaab9e48d" tabindex="-1" value=""></div>
+
+        <ul class="reasons mobilehide">
+          <li><i class="fa fa-users"></i> Dozens get involved every year</li>
+          <li><i class="fa fa-graduation-cap"></i> No experience needed, only enthusiasm</li>
+          <li><i class="fa fa-cogs"></i> Learn new skills and make new friends</li>
+        </ul>
+
+        <div class="clear"><input type="submit" value="Get on the list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+  </div>
+</section>
+
 <!-- The team gallery -->
 
 <section id="team">
   <div id="grad"></div>
   <div class="container">
-    <h3>What's going on?</h3>
+    <h3 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">What's going on?</h3>
     <hr>
     <p class="desc">Take a look at our current projects...</p>
 
@@ -41,20 +87,20 @@
 
                   facebook: {
                       accounts: ['@smoketv'],
-                      limit: 5,
+                      limit: 4,
                       access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c'
                   },
 
                   instagram: {
                       accounts: ['smoketvcrew'],
-                      limit: 2,
+                      limit: 4,
                       client_id: '8350ffadd7eb487893a3698307ea67cb',
                       access_token: ''
                   },
 
                   twitter:{
                       accounts: ['@wminsmoketv'],                      //Array: Specify a list of accounts from which to pull tweets
-                      limit: 5,                                   //Integer: max number of tweets to load
+                      limit: 4,                                   //Integer: max number of tweets to load
                       consumer_key: 'DeiNAbk35FM7HtuHI7rwUvgCh',          //String: consumer key. make sure to have your app read-only
                       consumer_secret: 'QlD2zJn0IzAfoIqIzZ1kNheeJir4atuLnWCZHPtVvT0pzljdjW',//String: consumer secret key. make sure to have your app read-only
                    },
@@ -80,41 +126,17 @@
   </div>
 </section>
 
-<!-- A mailing list subscribe CTA -->
-
-<section id="subscribe">
-  <div class="container">
-
-
-
-    <h3 class="animated fadeInUp">How to <span>make films</span> and influence people</h3>
-    <hr>
-    <p>Want to get involved with Smoke TV? Get on our mailing list and join the Facebook group. No experience is needed and full training is provided.</p>
-
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-    <form action="//media.us13.list-manage.com/subscribe/post?u=bae3fdf7dc6f735f144847240&amp;id=ffaab9e48d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bae3fdf7dc6f735f144847240_ffaab9e48d" tabindex="-1" value=""></div>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-        </div>
-    </form>
-    </div>
-    <!--End mc_embed_signup-->
-
-  </div>
-</section>
-
 <!-- Service triplet boxes linking to email. -->
 
 <section id="services">
-    <div id="slice"></div>
+    <div id="slice">
+
+
+    </div>
 
   <div class="container">
 
-    <h3>We cover events</h3>
+    <h3 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">We cover events</h3>
     <hr>
     <p>We accept hires from other student groups and University organisations. We’ll work with you to cover events, promote your activities and more. All income is reinvested back into Smoke TV.</p>
 
