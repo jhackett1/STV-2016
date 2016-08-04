@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<script>
+  new WOW().init();
+</script>
+
 <!-- An embedded Youtube video in the "Watch" section -->
 
 <section id="watch">
@@ -30,7 +34,7 @@
 <section id="subscribe">
   <div class="bg" style="background-image: url( <?php echo get_template_directory_uri(); ?>/img/1.jpg )"></div>
   <div class="container">
-    <h2 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">How to <span>make films</span> and influence people</h2>
+    <h2 class="wow animated fadeInUp" data-wow-duration="0.5s">How to <span>make films</span> and influence people</h2>
     <p>Want to get involved with Smoke TV? Get on our mailing list and <a href="https://www.facebook.com/groups/208849179517037/">join the Facebook group</a>. No experience is needed and full training is provided.</p>
 
     <!-- Begin MailChimp Signup Form -->
@@ -76,7 +80,7 @@
 <section id="team">
   <div id="grad"></div>
   <div class="container">
-    <h3 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">What's going on?</h3>
+    <h3 class="wow animated fadeInUp" data-wow-duration="0.5s">What's going on?</h3>
     <hr>
     <p class="desc">Take a look at our current projects...</p>
 
@@ -116,7 +120,6 @@
 
               });
           });
-          console.log("testing");
       </script>
 
       <div class="social-feed-container" style="max-width: 600px; margin: 20px auto"></div>
@@ -136,7 +139,7 @@
 
   <div class="container">
 
-    <h3 class="wow animated fadeInUp" data-wow-duration="0.3s" data-wow-offset="0">We cover events</h3>
+    <h3 class="wow animated fadeInUp" data-wow-duration="0.5s">We cover events</h3>
     <hr>
     <p>We accept hires from other student groups and University organisations. We’ll work with you to cover events, promote your activities and more. All income is reinvested back into Smoke TV.</p>
 

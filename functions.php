@@ -3,7 +3,6 @@
 //Initial addition of responsive styling and jQuery
 	wp_enqueue_style( 'Styles', get_stylesheet_uri() );
 	wp_enqueue_style( 'FontAwesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.min.css' );
-	wp_enqueue_style( 'animate', get_stylesheet_directory_uri() . '/css/animate.css' );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.12.4.min.js');
 	wp_enqueue_script( 'masthead', get_template_directory_uri() . '/js/masthead.js');
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js');

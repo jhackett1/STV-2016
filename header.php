@@ -6,8 +6,24 @@
   <title><?php wp_title('|','true','right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
   <?php wp_head(); ?>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@WminSmokeTV">
+  <meta name="twitter:creator" content="@WminSmokeTV">
+  <meta name="twitter:title" content="Smoke TV">
+  <meta name="twitter:description" content="Student television at the University of Westminster">
+  <meta name="twitter:image" content="http://uwsu.com/tv/wp-content/uploads/sites/5/2016/08/13669634_1169001193166863_7980080959781773292_n.jpg">
+
+  <meta property="fb:app_id" content="1134129026651501" />
+  <meta property="og:url" content="<?php the_permalink() ?>"/>
+  <meta property="og:title" content="Smoke TV" />
+  <meta property="og:description" content="Student television at the University of Westminster" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://uwsu.com/tv/wp-content/uploads/sites/5/2016/08/13669634_1169001193166863_7980080959781773292_n.jpg">
+
 </head>
 <body>
+
 
 <section id="overlay"></section>
 
